@@ -1,5 +1,5 @@
 .example {
-
+  background-color: #eaeaea;
 }
 
 .example__wrapper {
@@ -7,7 +7,19 @@
 }
 
 .example__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
 
+.example__text {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $base-color-text;
 }
 
 .example__list {
@@ -18,16 +30,30 @@
 
 }
 
-.example__option{
-
+.example__option {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $base-color-text;
 }
 
-.example__option{
-
+.example__value {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .example__desc {
-
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .example__slider {

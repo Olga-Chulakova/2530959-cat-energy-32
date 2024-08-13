@@ -7,11 +7,15 @@
 }
 
 .work__title {
-
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
 }
 
 .work__list {
-
+  list-style-type: none;
 }
 
 .work__item {
@@ -19,5 +23,9 @@
 }
 
 .work__text {
-
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $base-color-text;
 }

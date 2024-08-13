@@ -3,7 +3,7 @@
 }
 
 .programm__list {
-
+  list-style-type: none;
 }
 
 .programm__item {
@@ -11,19 +11,20 @@
 }
 
 .programm__wrapper {
-
+  background-color: #f2f2f2;
 }
 
 .programm__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .programm__text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -31,9 +32,10 @@
 }
 
 .programm__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
+  text-transform: uppercase;
 }

@@ -3,11 +3,19 @@
 }
 
 .subscribe__title {
-
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .subscribe__text {
-
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .subscribe__form {
@@ -15,5 +23,5 @@
 }
 
 .subscribe__button {
-
+  border: none;
 }
