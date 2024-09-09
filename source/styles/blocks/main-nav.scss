@@ -143,14 +143,17 @@
 
 .main-nav__item {
   border-bottom: 1px solid #e6e6e6;
-  background-color: #ffffff;
 
   &:first-child {
     border-top: 1px solid #e6e6e6;
+  }
 
-    @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
+    border: none;
+    margin: 0;
+
+    &:first-child {
       border: none;
-      margin: 0;
     }
   }
 }
