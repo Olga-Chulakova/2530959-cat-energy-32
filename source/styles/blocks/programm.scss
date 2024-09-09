@@ -1,17 +1,158 @@
-// .programm {
+.programm {
+  margin-bottom: 20px;
 
-// }
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
 
-// .programm__list {
-//   list-style-type: none;
-// }
+  @media (min-width: $desktop) {
+    margin-bottom: 71px;
+  }
+}
 
-// .programm__item {
+.programm__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
-// }
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+}
+
+.programm__item {
+  padding: 21px 33px 18px 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 77px 63px 57px 52px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    padding: 47px 61px 55px 52px;
+    margin-bottom: 0;
+  }
+}
 
 .programm__wrapper {
-  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: auto;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+}
+
+.programm__wrapper--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-slim.svg");
+    width: 36px;
+    height: 50px;
+    top: -3px;
+    left: 7px;
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../icons/cat-slim.svg");
+      width: 140px;
+      height: 194px;
+      top: 4px;
+      left: 423px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../icons/cat-slim.svg");
+      width: 70px;
+      height: 97px;
+      top: -6px;
+      left: 15px;
+    }
+  }
+}
+
+.programm__wrapper--weight-gain {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    top: 11px;
+    left: -7px;
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../icons/cat-pro.svg");
+      width: 268px;
+      height: 112px;
+      top: 58px;
+      left: 359px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../icons/cat-pro.svg");
+      width: 134px;
+      height: 56px;
+      top: 20px;
+      left: -19px;
+    }
+  }
 }
 
 .programm__title {
@@ -21,6 +162,20 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+  margin-left: 70px;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 140px;
+    padding-top: 30px;
+    margin-bottom: 73px;
+  }
 }
 
 .programm__text {
@@ -29,6 +184,35 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+  margin-top: 0;
+  margin-bottom: 38px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: 0;
+    bottom: -23px;
+    position: absolute;
+  }
+
+
+  @media (min-width: $tablet) {
+    width: 340px;
+    margin-top: 0;
+    margin-bottom: 48px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+    width: 100%;
+  }
 }
 
 .programm__link {
@@ -38,4 +222,38 @@
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/arrow.svg");
+    width: 24px;
+    height: 10px;
+    top: 6px;
+    left: 102px;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+  }
+
+  &:hover::after,
+  &:focus-visible::after,
+  &:active::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../icons/arrow.svg");
+      top: 5px;
+      left: 108px;
+    }
+  }
 }

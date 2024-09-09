@@ -1,14 +1,70 @@
-// .card {
+.card {
+  padding: 20px 20px 25px;
 
-// }
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+    width: 324px;
+    box-sizing: border-box;
+    padding: 10px 37px 40px;
+  }
 
-// .card__text {
+  @media (min-width: $desktop) {
+    width: 245px;
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+    padding: 10px 38px 40px;
+  }
+}
 
-// }
+.card__text {
+  grid-column: 2 / 3;
 
-// .card__discription {
+  @media (min-width: $tablet) {
+    grid-column: 1 / 2;
+  }
+}
 
-// }
+.card__title-card {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-align: left;
+  width: 76px;
+  margin: 0 0 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 135px;
+    margin: 0 55px 20px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 140px;
+    margin: 0 14px 23px 15px;
+  }
+}
+
+.card__discription {
+  margin: 0 0 21px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 37px;
+  }
+}
+
+.card__discription__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}
 
 .card__option {
   font-family: $lato;
@@ -16,6 +72,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card__value {
@@ -24,4 +85,41 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+.card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 250px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 169px;
+    margin: 0;
+  }
+}
+
+.card__wrapper-more {
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 169px;
+    margin: 0;
+  }
 }
