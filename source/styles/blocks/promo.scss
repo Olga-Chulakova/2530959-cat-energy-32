@@ -1,8 +1,16 @@
 .promo {
-  background-image: image-set("../../images/cat-background-mobile@1x.webp" 1x type("image/webp"), "../../images/cat-background-mobile@2x.webp" 2x type("image/webp"), "../../images/cat-background-mobile@1x.jpg" 1x type("image/jpeg"), "../../images/cat-background-mobile@2x.jpg" 2x type("image/jpeg"));
-  background-repeat: no-repeat;
-  background-size: 100%, 320px 302px, auto 400px;
-  background-position: top center;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: image-set("../../images/cat-background-mobile@1x.webp" 1x type("image/webp"), "../../images/cat-background-mobile@2x.webp" 2x type("image/webp"), "../../images/cat-background-mobile@1x.jpg" 1x type("image/jpeg"), "../../images/cat-background-mobile@2x.jpg" 2x type("image/jpeg"));
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 320px;
+    height: 302px;
+    display: block;
+  }
 
   @media (min-width: $tablet) {
     background-image: none;
