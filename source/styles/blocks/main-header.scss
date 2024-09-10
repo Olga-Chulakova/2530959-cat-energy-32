@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop) {
     display: block;
-    background-image: image-set("../../images/cat-background-desktop@1x.webp" 1x type("image/webp"), "../../images/cat-background-desktop@2x.webp" 2x type("image/webp"), "../../images/cat-background-desktop@1x.jpg" 1x type("image/jpeg"), "../../images/cat-background-desktop@2x.jpg" 2x type("image/jpeg"));
+    background-image: image-set("../images/cat-background-desktop@1x.webp" 1x type("image/webp"), "../images/cat-background-desktop@2x.webp" 2x type("image/webp"), "../images/cat-background-desktop@1x.jpg" 1x type("image/jpeg"), "../images/cat-background-desktop@2x.jpg" 2x type("image/jpeg"));
     background-repeat: no-repeat;
     background-size: 100%, contain, 100%;
     background-position: 100%, calc(50vw + (-22px)) -1px;
