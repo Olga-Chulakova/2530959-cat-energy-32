@@ -75,22 +75,21 @@
   &::before {
     content: "";
     position: absolute;
-    width: calc(100% + 40px);
     height: 1px;
     background-color: #ebebeb;
-    margin-left: -20px;
-    margin-right: -20px;
     top: 0;
+    left: 0;
+    right: 0;
   }
 
   &:last-child::after {
     content: "";
     position: absolute;
-    width: calc(100% + 40px);
     height: 1px;
     background-color: #ebebeb;
     bottom: 0;
-    margin-left: -20px;
+    left: 0;
+    right: 0;
   }
 
   @media (min-width: $tablet) {

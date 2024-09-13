@@ -15,6 +15,12 @@
   }
 }
 
+// .main-nav__container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
 .main-nav__toggle {
   width: 24px;
   height: 24px;
@@ -142,10 +148,14 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #e6e6e6;
+  @media (min-width: $mobile) {
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: calc(140px - 50vw);
+    margin-right: calc(140px - 50vw);
 
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
+    &:first-child {
+      border-top: 1px solid #e6e6e6;
+    }
   }
 
   @media (min-width: $tablet) {
