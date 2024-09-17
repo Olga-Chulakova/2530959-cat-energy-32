@@ -6,6 +6,11 @@
     width: 324px;
     box-sizing: border-box;
     padding: 10px 37px 40px;
+
+    &:last-child {
+      background-image: none;
+      background-color: #ffffff;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -55,7 +60,7 @@
   }
 }
 
-.card__discription__wrapper {
+.card__discription-wrapper {
   display: flex;
   justify-content: space-between;
 

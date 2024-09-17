@@ -15,22 +15,24 @@
 
 <body class="page__body">
   <header class="main-header main-header--index">
-    <nav class="main-nav main-nav--closed main-nav--nojs container">
-      <a class="main-header__logo" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-cat-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-cat-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="main-header__logo-cat" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотипа сайта">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
-          <img class="main-header__logo-text" src="images/logo-text-black.svg" width="101" height="18" alt="Логотип-текст cat energy">
-        </picture>
-      </a>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__container container">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-cat-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-cat-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="main-header__logo-cat" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотипа сайта">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
+            <img class="main-header__logo-text" src="images/logo-text-black.svg" width="101" height="18" alt="Логотип-текст cat energy">
+          </picture>
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper main-nav__wrapper--close">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -119,25 +121,25 @@
           </div>
           <p class="example__desc">Затраты на питание: <span>15 000 РУБ.</span></p>
         </div>
-        <div class="example__slider slider__images">
-          <div class="slider__images-wrapper slider__images-wrapper--fat">
+        <div class="example__slider slider-images">
+          <div class="slider-images__wrapper slider-images__wrapper--fat">
             <picture>
               <source media="(min-width: 1440px)" type="image/webp" width="560" height="512" srcset="images/fat-cat-tab-desk@1x.webp, images/fat-cat-tab-desk@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/fat-cat-tab-desk@1x.webp, images/fat-cat-tab-desk@2x.webp 2x">
               <source type="image/webp" width="280" height="256" srcset="images/fat-cat-mobile@1x.webp, images/fat-cat-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="images/fat-cat-tab-desk@1x.png 1x, images/fat-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
               <source media="(min-width: 768px)" srcset="images/fat-cat-tab-desk@1x.png 1x, images/fat-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="slider__images-cat slider__images-cat--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
+              <img class="slider-images__cat slider-images__cat--fat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
             </picture>
           </div>
-          <div class="slider__images-wrapper slider__images-wrapper--slim">
+          <div class="slider-images__wrapper slider-images__wrapper--slim">
             <picture>
               <source media="(min-width: 1440px)" type="image/webp" width="560" height="512" srcset="images/slim-cat-tab-desk@1x.webp, images/slim-cat-tab-desk@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/slim-cat-tab-desk@1x.webp, images/slim-cat-tab-desk@2x.webp 2x">
               <source type="image/webp" width="280" height="256" srcset="images/slim-cat-mobile@1x.webp, images/slim-cat-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="images/slim-cat-tab-desk@1x.png 1x, images/slim-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
               <source media="(min-width: 768px)" srcset="images/slim-cat-tab-desk@1x.png 1x, images/slim-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="slider__images-cat slider__images-cat--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
+              <img class="slider-images__cat slider-images__cat--slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
             </picture>
           </div>
           <div class="example__range-bar">
