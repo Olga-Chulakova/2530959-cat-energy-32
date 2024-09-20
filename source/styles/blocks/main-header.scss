@@ -26,7 +26,11 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    width: 174px;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 205px;
   }
 }
 

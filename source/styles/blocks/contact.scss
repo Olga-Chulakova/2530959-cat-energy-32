@@ -12,8 +12,10 @@
 
 .contact__wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 26px;
   padding-bottom: 26px;
+  row-gap: 20px;
 
   @media (min-width: $tablet) {
     padding: 60px 70px;
@@ -49,6 +51,7 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -64,6 +67,7 @@
   font-style: normal;
   line-height: 20px;
   color: $base-color-text;
+  width: 140px;
 
   @media (min-width: $tablet) {
     font-size: 16px;

@@ -169,6 +169,8 @@
   @media (min-width: $tablet) {
     text-align: left;
     margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop) {
@@ -203,6 +205,9 @@
     width: 340px;
     margin-top: 0;
     margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
 
     &::after {
       content: none;
@@ -223,16 +228,15 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
   &::after {
     content: "";
-    position: absolute;
     background-image: url("../../icons/arrow.svg");
-    width: 24px;
-    height: 10px;
-    top: 6px;
-    left: 102px;
+    width: 32px;
+    height: 12px;
     transition: transform 0.3s linear;
     transform-origin: left center;
   }
@@ -248,12 +252,13 @@
   }
 
   @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    gap: 25px;
+
     &::after {
       content: "";
-      position: absolute;
       background-image: url("../../icons/arrow.svg");
-      top: 5px;
-      left: 108px;
     }
   }
 }

@@ -97,7 +97,7 @@
 .example__list-wrapper {
   display: flex;
   gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 
   @media (min-width: $desktop) {
     margin-bottom: 55px;
@@ -133,23 +133,29 @@
   font-size: 12px;
   line-height: 12px;
   padding: 0 10px;
-  margin: 0 19px;
+  margin: 0 auto -15px;
   color: $base-color-text;
   text-align: center;
-  position: absolute;
-  top: 46px;
   background-color: #eaeaea;
+  width: 77px;
 
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
-    margin: 0;
-    top: 63px;
+    margin-bottom: -6px;
     background-color: #ffffff;
+    min-width: 114px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
     background-color: #eaeaea;
+  }
+}
+
+.example__option--time {
+  @media (min-width: $tablet) {
+    min-width: 142px;
   }
 }
 
@@ -163,6 +169,7 @@
   margin-left: 0;
   margin-top: 15px;
   margin-bottom: 8px;
+  order: -1;
 
 
   @media (min-width: $tablet) {
@@ -184,7 +191,7 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 20px;
     padding: 0;
     width: 176px;
     text-align: right;
@@ -194,7 +201,7 @@
   @media (min-width: $desktop) {
     margin-bottom: 75px;
     display: flex;
-    width: 330px;
+    width: 327px;
     justify-content: space-between;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
