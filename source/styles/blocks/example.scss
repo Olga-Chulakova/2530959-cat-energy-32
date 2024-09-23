@@ -53,9 +53,8 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 0;
-    padding-bottom: 75px;
+    padding-bottom: 76px;
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
   }
 }
 
@@ -81,7 +80,6 @@
     padding-top: 70px;
     width: 433px;
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
   }
 }
 
@@ -93,7 +91,6 @@
 
   @media (min-width: $desktop) {
     flex-direction: column;
-    grid-row: 3 / 4;
     grid-column: 1 / 2;
     padding-top: 20px;
   }
@@ -187,7 +184,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 }
 
