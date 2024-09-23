@@ -1,11 +1,11 @@
 .card {
-  padding: 20px 20px 25px;
+  padding: 21px 20px 25px;
 
   @media (min-width: $tablet) {
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
     width: 324px;
     box-sizing: border-box;
-    padding: 10px 37px 40px;
+    padding: 10px 36px 40px;
 
     &:last-child {
       background-image: none;
@@ -16,7 +16,7 @@
   @media (min-width: $desktop) {
     width: 245px;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
-    padding: 10px 38px 40px;
+    padding: 10px 37px 41px;
   }
 }
 
@@ -28,6 +28,10 @@
   }
 }
 
+.card__title-link {
+  text-decoration: none;
+}
+
 .card__title-card {
   font-family: $oswald;
   font-weight: 400;
@@ -37,6 +41,7 @@
   text-align: left;
   width: 76px;
   margin: 0 0 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -44,12 +49,12 @@
     text-align: center;
     text-transform: uppercase;
     width: 135px;
-    margin: 0 55px 20px 60px;
+    margin: 0 55px 14px 58px;
   }
 
   @media (min-width: $desktop) {
     width: 140px;
-    margin: 0 14px 23px 15px;
+    margin: 0 14px 18px;
   }
 }
 
@@ -57,7 +62,11 @@
   margin: 0 0 21px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 37px;
+    margin: 0 0 31px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 36px;
   }
 }
 
@@ -67,7 +76,7 @@
 
   @media (min-width: $tablet) {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     padding-top: 5px;
   }
 }
@@ -107,11 +116,13 @@
   width: 280px;
 
   @media (min-width: $tablet) {
+    width: 250px;
     grid-template-columns: 250px;
     margin: 0;
   }
 
   @media (min-width: $desktop) {
+    width: 169px;
     grid-template-columns: 169px;
     margin: 0;
   }

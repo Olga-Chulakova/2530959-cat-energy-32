@@ -4,8 +4,12 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet) {
-    padding-top: 55px;
+    padding-top: 43px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 55px;
   }
 }
 
@@ -19,10 +23,15 @@
 
 .main-footer__logo-link {
   display: block;
-  margin: 0 76px 20px;
+  margin: 0 76px 16px;
 
   @media (min-width: $tablet) {
     margin: 0;
+    margin-right: 161px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 416px 0 0;
   }
 }
 

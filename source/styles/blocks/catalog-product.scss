@@ -1,6 +1,8 @@
-// .catalog-product {
-
-// }
+.catalog-product {
+  @media (min-width: $desktop) {
+    padding-top: 43px;
+  }
+}
 
 .catalog-product__title {
   font-family: $oswald;
@@ -35,7 +37,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 62px 80px;
   }
 }
 
@@ -62,6 +64,10 @@
   @media (min-width: $tablet) {
     height: 210px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 13px;
   }
 }
 
@@ -127,8 +133,12 @@
   @media (min-width: 738px) {
     font-size: 16px;
     line-height: 18px;
-    margin: 0 auto 82px;
-    width: 170px;
+    margin: 0 auto 81px;
+    width: 169px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 89px;
   }
 }
 
@@ -188,26 +198,29 @@
     height: 30px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 53px;
+    bottom: 44px;
   }
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
-    margin: 0 auto 23px;
+    margin: 0 auto 21px;
     width: 135px;
-    padding-top: 160px;
+    padding-top: 149px;
 
     &::before {
       width: 60px;
       height: 60px;
-      bottom: 110px;
+      bottom: 98px;
     }
   }
 
   @media (min-width: $desktop) {
+    margin: 0 auto 25px;
+    padding-top: 139px;
+
     &::before {
-      bottom: 100px;
+      bottom: 87px;
     }
   }
 }

@@ -1,12 +1,14 @@
 .work {
-  margin-bottom: 49px;
+  padding-bottom: 53px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 92px;
+    padding-top: 15px;
+    padding-bottom: 91px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 69px;
+    padding-top: 71px;
+    padding-bottom: 69px;
   }
 }
 
@@ -21,7 +23,7 @@
   line-height: 40px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet) {
     margin-bottom: 32px;
@@ -37,17 +39,17 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-flow: row wrap;
-    gap: 37px 153px;
+    gap: 37px 142px;
     counter-reset: work-counter;
   }
 
   @media (min-width: $desktop) {
-    gap: 37px 94px;
+    gap: 37px 83px;
   }
 }
 
@@ -60,7 +62,7 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 0;
+    top: -2px;
     background-position: center;
   }
 
@@ -90,7 +92,13 @@
       line-height: 280px;
       position: absolute;
       top: 0;
-      right: 0;
+      left: 117px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      left: 115px;
     }
   }
 }
@@ -142,6 +150,12 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 234px;
+    width: max-content;
+  }
+}
+
+.work__text-perenos {
+  @media (min-width: $tablet) {
+    white-space: pre;
   }
 }

@@ -1,5 +1,7 @@
 
 .additional-product {
+  padding-top: 23px;
+
   @media (min-width: $tablet) {
     padding-top: 74px;
   }
@@ -42,7 +44,7 @@
     padding-left: 40px;
 
     &::after {
-      top: 16px;
+      top: 15px;
       background-image: none;
       background-color: #68b738;
       left: calc(354px - 50vw);
@@ -57,7 +59,7 @@
     line-height: 40px;
 
     &::after {
-      top: 20px;
+      top: 17px;
       left: calc(610px - 50vw);
       right: calc(610px - 50vw);
     }
@@ -117,12 +119,12 @@
 
   @media (min-width: $tablet) {
     border-top: 1px solid #cdcdcd;
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 652px 244px;
-    padding: 15px 0 17px;
+    padding: 12px 0 19px;
   }
 }
 
@@ -150,6 +152,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop) {
@@ -161,10 +164,16 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet) {
+    padding: 2px 3px 0 0;
+    gap: 22px;
+  }
+
   @media (min-width: $desktop) {
     align-items: center;
     margin: 0;
-    width: 320px;
+    width: 324px;
+    padding: 5px 2px 0 0;
   }
 }
 
@@ -175,10 +184,10 @@
   line-height: 14px;
   color: $base-color-text;
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet) {
-    margin-right: 49px;
+    text-align: right;
     font-size: 16px;
     line-height: 20px;
   }
@@ -198,12 +207,14 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    width: 68px;
+    text-align: right;
   }
 
   @media (min-width: $desktop) {
-    margin-right: 40px;
     display: flex;
-    width: 40px;
+    text-align: left;
+    width: 82px;
   }
 }
 
@@ -215,7 +226,7 @@
 
 .additional-product__wrapper {
   background-color: $bg-basic-green;
-  background-image: image-set("../../images/cat-bag-mobile@1x.webp" 1x type("image/webp"), "../../images/cat-bag-mobile@2x.webp.webp" 2x type("image/webp"), "../../images/cat-bag-mobile@1x.jpg" 1x type("image/jpg"), "../../images/cat-bag-mobile@2x.jpg" 2x type("image/jpg"));
+  background-image: image-set("../../images/cat-bag-mobile@1x.webp" 1x type("image/webp"), "../../images/cat-bag-mobile@2x.webp" 2x type("image/webp"), "../../images/cat-bag-mobile@1x.jpg" 1x type("image/jpg"), "../../images/cat-bag-mobile@2x.jpg" 2x type("image/jpg"));
   background-size: cover;
   width: 280px;
   height: 290px;
