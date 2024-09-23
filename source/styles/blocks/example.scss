@@ -183,7 +183,11 @@
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 12px;
   }
 }
 
@@ -202,11 +206,12 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
-    padding: 0;
     width: 176px;
     text-align: right;
     margin: 0;
-    display: none;
+    flex-direction: column;
+    padding: 13px 2px 0 0;
+    gap: 9px;
   }
 
   @media (min-width: $desktop) {
@@ -214,14 +219,10 @@
     display: flex;
     width: 327px;
     justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
   }
 }
-
-// .example__slider {
-//   @media (min-width: $desktop) {
-//     grid-column: 2 / 3;
-//   }
-// }
 
 .example__range-bar {
   position: absolute;
