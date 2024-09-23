@@ -160,22 +160,6 @@
   }
 }
 
-// .catalog-product__card--more::after {
-//   content: "";
-//   background-image: url("../../icons/plus-catalog.svg");
-//   background-size: 30px 30px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   width: 30px;
-//   height: 30px;
-//   position: absolute;
-
-//   @media (min-width: $tablet) {
-//     width: 60px;
-//     height: 60px;
-//   }
-// }
-
 .catalog-product__card-title {
   font-family: $oswald;
   font-weight: 400;
